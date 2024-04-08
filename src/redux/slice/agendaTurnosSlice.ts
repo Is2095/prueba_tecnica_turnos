@@ -8,7 +8,7 @@ export interface TurnosAgendados {
     category: string
     turno?: string
     fecha?: string
-}
+};
 
 const initialState: TurnosAgendados[] = [];
 
@@ -20,7 +20,7 @@ export const agendaTurnosSlice = createSlice({
             return state = [...state, ...action.payload]
         }
     }
-})
+});
 
 export default agendaTurnosSlice.reducer;
-export const { sumarturno } = agendaTurnosSlice.actions
+export const { sumarturno } = agendaTurnosSlice.actions;

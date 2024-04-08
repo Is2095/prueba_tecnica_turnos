@@ -37,4 +37,4 @@ Mi nombre es Ismael, desarrollador web, quería compartirte este proyecto que se
 
 ![*](/public/fotoReadme.jpg)
 
-![ir a mi linkedin](https://www.linkedin.com/in/ismael-diaz-3b440b27a)
+[ir a mi linkedin](https://www.linkedin.com/in/ismael-diaz-3b440b27a)

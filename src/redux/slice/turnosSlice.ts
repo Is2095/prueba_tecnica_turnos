@@ -5,13 +5,13 @@ export interface Horario {
     serviceId: number;
     date: string;
     availableTimeslots: string[];
-}
+};
 
 const initialState: Horario = {
     serviceId: 0,
     date: '',
     availableTimeslots: []
-}
+};
 
 export const horarioSlice = createSlice({
     name: 'horario',
@@ -21,6 +21,7 @@ export const horarioSlice = createSlice({
             return state = action.payload
         }
     }
-})
+});
+
 export default horarioSlice.reducer;
-export const { sumarHorario } = horarioSlice.actions
+export const { sumarHorario } = horarioSlice.actions;

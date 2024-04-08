@@ -1,32 +1,32 @@
 
-import { useActions } from "../redux/actions/actions"
-import { useLocation } from "react-router-dom"
-import style from './modulosCSS/barraProcesoTurno.module.css'
-import { useEffect, useState } from "react"
+import { useLocation } from "react-router-dom";
+import style from './modulosCSS/barraProcesoTurno.module.css';
+import { useEffect, useState } from "react";
 
 const BarraProcessoTurno = () => {
 
-    const [nivelBarra, setNivelBarra] = useState('30%')
-    const [titulo, setTitulo] = useState('Seleccionar servicio')
-    const { getSeleccion } = useActions()
-    const location = useLocation()
-    const seleccion = getSeleccion()
+    const [nivelBarra, setNivelBarra] = useState('30%');
+    const [titulo, setTitulo] = useState('Seleccionar servicio');
+
+    const location = useLocation();
+
     useEffect(() => {
 
         if (location.pathname === '/reservar') {
-            setNivelBarra('30%')
-            setTitulo('Seleccionar servicio')
-        }
+            setNivelBarra('30%');
+            setTitulo('Seleccionar servicio');
+        };
         if (location.pathname === '/turnos') {
-            setNivelBarra('60%')
-            setTitulo('Seleccionar horario')
-        }
+            setNivelBarra('60%');
+            setTitulo('Seleccionar horario');
+        };
         if (location.pathname === '/confirmarReserva') {
-            setNivelBarra('85%')
-            setTitulo('Confirmar turno')
-        }
+            setNivelBarra('85%');
+            setTitulo('Confirmar turno');
+        };
 
-    }, [location])
+    }, [location]);
+
     return (
         <div>
             {
@@ -48,5 +48,6 @@ const BarraProcessoTurno = () => {
             }
         </div>
     )
-}
-export default BarraProcessoTurno
+}; 
+
+export default BarraProcessoTurno;

@@ -1,10 +1,9 @@
 
-import horarios from '../datosAPI/horarios.json'
+import horarios from '../datosAPI/horarios.json';
 
 const GetHorariosAPI = () => {
-    return horarios
+    
+    return horarios;
+};
 
-
-}
-
-export default GetHorariosAPI
+export default GetHorariosAPI;

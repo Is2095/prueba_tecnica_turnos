@@ -1,48 +1,54 @@
-import GetElementoAPI from "../../hook/getElementoAPI"
-import GetHorariosAPI from "../../hook/getHorariosAPI"
-import { useAppDispatch, useAppSelector } from "../../hook/hookStore"
-import { sumarCategoria, Categoria } from "../slice/reservarSlice"
-import { sumarSeleccionTurno, borrorSeleccion, sumarSeleccion, Turno } from "../slice/seleccionSlice"
-import { sumarHorario } from "../slice/turnosSlice"
-import { TurnosAgendados, sumarturno } from "../slice/agendaTurnosSlice"
-// import { Horario } from "../slice/turnosSlice"
 
+import GetElementoAPI from "../../hook/getElementoAPI";
+import GetHorariosAPI from "../../hook/getHorariosAPI";
+import { useAppDispatch, useAppSelector } from "../../hook/hookStore";
+import { sumarCategoria, Categoria } from "../slice/reservarSlice";
+import { sumarSeleccionTurno, borrorSeleccion, sumarSeleccion, Turno } from "../slice/seleccionSlice";
+import { sumarHorario } from "../slice/turnosSlice";
+import { TurnosAgendados, sumarturno } from "../slice/agendaTurnosSlice";
 
 export const useActions = () => {
 
-    const dispatch = useAppDispatch()
-    const elementos = useAppSelector(state => state.reservar)
-    const horarios = useAppSelector(state => state.horario)
-    const seleccion = useAppSelector(state => state.seleccion)
-    const turnos = useAppSelector(state => state.turnos)
+    const dispatch = useAppDispatch();
+
+    const elementos = useAppSelector(state => state.reservar);
+    const horarios = useAppSelector(state => state.horario);
+    const seleccion = useAppSelector(state => state.seleccion);
+    const turnos = useAppSelector(state => state.turnos);
 
     const getDatos = () => {
         return elementos;
-    }
+    };
+
     const getHorarios = () => {
-        return horarios
-    }
+        return horarios;
+    };
+
     const getSeleccion = () => {
-        return seleccion
-    }
+        return seleccion;
+    };
+
     const getAgendaTurnos = () => {
-        return turnos
-    }
+        return turnos;
+    };
 
     const sumarDatos = () => {
-        const datos = GetElementoAPI()
-        dispatch(sumarCategoria(datos))
-    }
+        const datos = GetElementoAPI();
+        dispatch(sumarCategoria(datos));
+    };
 
     const sumaSeleccion = (dato: Categoria) => {
-        dispatch(sumarSeleccion(dato))
-    }
+        dispatch(sumarSeleccion(dato));
+    };
+
     const sumarSeleccionHorario = (dato: Turno) => {
-        dispatch(sumarSeleccionTurno(dato))
-    }
+        dispatch(sumarSeleccionTurno(dato));
+    };
+
     const sumarTurnoAgenda = (dato: TurnosAgendados) => {
-        dispatch(sumarturno([dato]))
-    }
+        dispatch(sumarturno([dato]));
+    };
+
     const borrarSeleccion = () => {
        const cero = {
             id: 0,
@@ -51,16 +57,14 @@ export const useActions = () => {
             category: '',
             turno: '',
             fecha: '',
-        }
-        dispatch(borrorSeleccion(cero))
-    }
-
+        };
+        dispatch(borrorSeleccion(cero));
+    };
 
     const sumaHorarios = () => {
-        const horario = GetHorariosAPI()
-        dispatch(sumarHorario(horario))
+        const horario = GetHorariosAPI();
+        dispatch(sumarHorario(horario));
+    };
 
-    }
-
-    return { sumarDatos, sumaSeleccion, sumaHorarios, sumarSeleccionHorario, sumarTurnoAgenda, borrarSeleccion, getDatos, getHorarios, getSeleccion, getAgendaTurnos }
-}
+    return { sumarDatos, sumaSeleccion, sumaHorarios, sumarSeleccionHorario, sumarTurnoAgenda, borrarSeleccion, getDatos, getHorarios, getSeleccion, getAgendaTurnos };
+};

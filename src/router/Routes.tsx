@@ -1,11 +1,10 @@
 
-import {createBrowserRouter} from 'react-router-dom'
-import App from '../App'
-import Turnos from '../componentes/turnos'
-import Categorias from '../componentes/reservar'
-import ConfirmarReserva from '../componentes/confirmaReserva'
-import { Navigate } from 'react-router-dom'
-import AgendaTurnos from '../componentes/agentaTurnos'
+import App from '../App';
+import {createBrowserRouter, Navigate } from 'react-router-dom';
+import Turnos from '../componentes/turnos';
+import Categorias from '../componentes/reservar';
+import ConfirmarReserva from '../componentes/confirmaReserva';
+import AgendaTurnos from '../componentes/agentaTurnos';
 
 export const Routes = createBrowserRouter([
     {
@@ -33,4 +32,4 @@ export const Routes = createBrowserRouter([
         }
     ]
    }
- ])
+ ]);

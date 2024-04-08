@@ -1,11 +1,11 @@
 
 import { useActions } from "../redux/actions/actions";
-import style from '../componentes/modulosCSS/agendaTurnos.module.css'
+import style from '../componentes/modulosCSS/agendaTurnos.module.css';
 
 const AgendaTurnos = () => {
 
-    const { getAgendaTurnos } = useActions()
-    const turnos = getAgendaTurnos()
+    const { getAgendaTurnos } = useActions();
+    const turnos = getAgendaTurnos();
 
     return (
         <div>
@@ -37,5 +37,6 @@ const AgendaTurnos = () => {
             }
         </div>
     )
-}
+};
+
 export default AgendaTurnos;

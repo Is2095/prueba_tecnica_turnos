@@ -1,0 +1,60 @@
+.contenedorTurnos {
+    height: auto;
+    overflow: hidden;
+    border: 2px solid rgb(211, 209, 209);
+    border-radius: 4px;
+    padding: .5rem;
+    margin: .5rem;
+    font-weight: 100;
+}
+
+.contenedorHorarios {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(1fr));
+}
+
+.tituloTurnosDisponibles {
+    margin: 1rem 0;
+    font-weight:  900;
+}
+
+.diaTurnosDisponibles {
+    margin: 1rem 0;
+
+}
+.strongTurnos {
+    font-weight:  900;
+}
+.botonHorario {
+    width: 7rem;
+    height: 3rem;
+    margin: auto;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border: none;
+    background-color: beige;
+    transition: transform .3s;
+}
+.botonHorario:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+@media (min-width: 320px) {
+    .contenedorHorarios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 760px) {
+    .contenedorHorarios {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1020px) {
+    .contenedorHorarios {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

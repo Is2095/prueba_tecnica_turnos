@@ -1,0 +1,20 @@
+
+.contenedorSiguienteAtras {
+    height: auto;
+    padding: .7rem 0;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid rgb(211, 209, 209);}
+.botonSiquienteAtras {
+    width: 7rem;
+    height: 3rem;
+    padding: .3rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: transform .3s linear;
+}
+.botonSiquienteAtras:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}

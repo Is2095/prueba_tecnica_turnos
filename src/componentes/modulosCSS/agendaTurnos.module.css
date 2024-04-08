@@ -1,0 +1,50 @@
+
+.contenedorAgendaTurnos {
+    margin: 1rem;
+    padding: .3rem 1rem 0rem 1rem;
+    border: 2px solid rgb(211, 209, 209);
+    border-radius: 5px;
+    height: auto;
+}
+.tituloTurnosConfirmados {
+    margin: .3rem auto;
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgb(34, 107, 4);
+}
+.strongAgenda {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: black;
+}
+.contenedorFechaAgenda {
+    border: 2px solid rgb(211, 209, 209);
+    border-radius: 5px;
+    margin: .3rem;
+    padding: .3rem;
+}
+.tituloTurno {
+    text-decoration: underline;
+}
+.noHayTurnos {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tituloNoHay {
+    font-size: 3rem;
+    animation: tituloNoHay 2s linear infinite;
+}
+@keyframes tituloNoHay {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.fechaTurno {
+    padding-left: 1.5rem;
+}
+.tituloCategoriaAgenda {
+    color: rgb(5, 253, 129);
+}

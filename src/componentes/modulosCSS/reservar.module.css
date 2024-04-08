@@ -1,0 +1,22 @@
+
+.contenedorReservas {
+    height: auto;
+    overflow: hidden;
+    border: 2px solid rgb(211, 209, 209);
+    border-radius: 4px;
+    padding: .5rem;
+    margin: .5rem;
+    font-weight:  100;
+}
+.ulListaReservar {
+    list-style-type: none;
+}
+.cartelCategoria {
+    margin: .5rem .3rem;
+    font-size: 1.4rem;
+}
+.tiposCategoria {
+    margin: .8rem .3rem;
+    border-radius: 15px;
+    background-color: beige;
+}

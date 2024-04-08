@@ -1,0 +1,45 @@
+
+.contenedorModal {
+    width: 100%;
+    margin-left: 0;
+    border-radius: 5px;
+}
+.ulListaModal {
+    list-style-type: none;
+}
+.diferentesEleccionCategoria {
+   
+    border: 1px solid rgb(211, 209, 209);
+    border-radius: 5px;
+    background-color: white;
+    margin: 1rem 0rem;
+    padding: 0rem .3rem;
+}
+.nombreCategoria {
+    color:  blue;
+    margin-top: 1rem;
+    font-size: x-large;
+    font-weight: bold;
+}
+.strong {
+color: black;
+}
+.ubicacionBotonSelecionarCategoria {
+    display: flex;
+    justify-content: end;
+    padding-right: 1rem;
+    padding-bottom: .5rem;
+}
+.botonSeleccionarTipo {
+    margin-top: .5rem;
+    padding: .5rem;
+    border: 1px solid rgb(211, 209, 209);
+    border-radius: 5px;
+    position: relative;
+    right: 0px;
+    transition: transform .2s;
+}
+.botonSeleccionarTipo:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}

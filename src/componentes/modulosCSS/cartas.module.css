@@ -1,0 +1,23 @@
+
+.contenedorCartaDatos {
+    padding: .3rem;
+    border: 1px solid rgb(211, 209, 209);
+    border-radius: .5rem;
+}
+
+.datos {
+    padding: 0rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.botonModal {
+    border: none;
+    background-color: beige;
+    font-size: x-large;
+    font-weight: bold;
+}
+.contenedorModal {
+    background-color: red;
+    color: red;
+}
+

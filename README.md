@@ -3,43 +3,31 @@
 
 # Bienvenido a este proyecto
 
-Mi nombre es Ismael, desarrollador web, quería compartirte este proyecto que se desarrolla para tramitar el turno de un determinado servicio, teniendo la posibilidad de elegir el servicio, fecha y hora del turno, a parte de poder ver todos los turnos que se han confirmados.
+    Mi nombre es Ismael, desarrollador web, quería compartirte este proyecto que se desarrolla para tramitar el turno de un determinado servicio, teniendo la posibilidad de elegir el servicio, fecha y hora del turno, a parte de poder ver todos los turnos que se han confirmados.
 
-### `npm start`
+---
+### Probando el Proyecto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ * Clonar el repositorio
+ * Abrirlo con un editor de texto
+ * Abrir una terminal en la carpeto donde está el package.json
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+ * Ejecutar `npm `install
+ * Luego que se instalen todas las dependencias ejecutar `npm start` 
+ * Se levantará el proyecto y se abrirá en el navegador en el puerto: localhost:3000
+ ---
 
-### `npm test`
+### Recorrido la Aplicación
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Al ingresar a la aplicación aparecerá como pantalla inicial un botón y una frase invitando a programar un turno, al hacer click se dirigirá a los diversos servicios disponible
 
-### `npm run build`
+* Ya en los servicios disponible, podremos abrir con `+` (y con `-` cerrar) los tipos diferentes existentes, teniendo la posibilidad de seleccionar la opción buscada, sólo se podrá seleccionar de a un tipo de servicio. Una vez que se halla elegido el tipo de servicio se habilitará el botón para poder pasar al siguiente paso.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* En este paso aparecerán los datos de días y hora disponible para el turno del servicio, en esta oportunidad, también, solo se podrá elegir una sola opción y al hacerlo se habilitará el botón para pasar al paso siguiente, también tendremos la posibilidad de acceder al botón `Anterior` que nos permitirá la posibilidad de volver a la pantalla de “Servicios”.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* En el último paso se mostrará los datos del turno seleccionado; tendremos la posibilidad de confirmar el turno, quedando agendado, o volver a las páginas anteriores para modificar algún dato. Al confirmar, si todo ha salido bien aparecerá un cartel indicando el éxito de la operación, y se redirigirá a la pantalla de “Servicios”, abriendo la posibilidad de agendar otro turno.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* En todo momento de elección aparecerán dos botones “Reservar” y “Mis turnos”. El primero nos dirigirá a los “Servicios” y el segundo no mostrará, si los hay, los turnos que tenemos agendados con sus datos respectivos. También tendremos una barra de proceso,indicando en que parte estamos del reservado de turno.
 
-### `npm run eject`
+* Espero disfrutes esta aplicación al igual que te sea útil.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

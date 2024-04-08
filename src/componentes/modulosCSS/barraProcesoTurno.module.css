@@ -1,0 +1,30 @@
+
+.cartelbarra{
+    margin: .5rem  1rem 0rem;
+    padding-left: 2rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.cartelBarraVacio {
+    width: 80vw;
+    height: 3.3rem;
+    margin: 0rem 2rem .5rem;
+}
+.BarraVacia {
+    height: 100%;
+    /* background: #03fa2d; Color de la barra de progreso */
+    border-radius: .3rem 6rem 6rem .3rem;
+}
+.contenedorBarra {
+    width: 60vw;
+    height: 2.5vh;
+    margin: 0rem 2rem .5rem;
+    background: #fcfafa;
+    border: 1px solid gray;
+    border-radius: .3rem ;
+}
+.barraProceso {
+    height: 100%;
+    background: #03fa2d; /* Color de la barra de progreso */
+    border-radius: .3rem 6rem 6rem .3rem;
+}

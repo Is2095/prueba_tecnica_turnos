@@ -40,7 +40,10 @@ const Turnos = () => {
     const handlerHorario = ({ ele }: { ele: string }) => {
         sumarSeleccionHorario({ turno: ele, fecha: datos.date });
         const button = document.getElementsByName('horarios');
-        button.forEach(ele => ele.style.backgroundColor = 'white');
+        button.forEach(ele => {
+            ele.style.backgroundColor = 'beige';
+            ele.style.color = 'black';
+        });
     };
 
     return (

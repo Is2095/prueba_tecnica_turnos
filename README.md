@@ -10,7 +10,7 @@ Mi nombre es Ismael, desarrollador web, quería compartirte este proyecto que se
 
  * Clonar el repositorio
  * Abrirlo con un editor de texto
- * Abrir una terminal en la carpeto donde está el package.json
+ * Abrir una terminal en la carpeta donde está el archivo package.json
 
  * Ejecutar `npm `install
  * Luego que se instalen todas las dependencias ejecutar `npm start` 

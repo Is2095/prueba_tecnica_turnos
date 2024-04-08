@@ -1,10 +1,9 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Prueba Técnica
 
-## Available Scripts
+# Bienvenido a este proyecto
 
-In the project directory, you can run:
+Mi nombre es Ismael, desarrollador web, quería compartirte este proyecto que se desarrolla para tramitar el turno de un determinado servicio, teniendo la posibilidad de elegir el servicio, fecha y hora del turno, a parte de poder ver todos los turnos que se han confirmados.
 
 ### `npm start`
 

@@ -3,7 +3,7 @@
 
 # Bienvenido a este proyecto
 
-    Mi nombre es Ismael, desarrollador web, quería compartirte este proyecto que se desarrolla para tramitar el turno de un determinado servicio, teniendo la posibilidad de elegir el servicio, fecha y hora del turno, a parte de poder ver todos los turnos que se han confirmados.
+Mi nombre es Ismael, desarrollador web, quería compartirte este proyecto que se desarrolla para tramitar el turno de un determinado servicio, teniendo la posibilidad de elegir el servicio, fecha y hora del turno, a parte de poder ver todos los turnos que se han confirmados.
 
 ---
 ### Probando el Proyecto
@@ -31,3 +31,10 @@
 
 * Espero disfrutes esta aplicación al igual que te sea útil.
 
+# Información del Desarrollador:
+
+## Ismael.
+
+![*](/public/fotoReadme.jpg)
+
+![ir a mi linkedin](https://www.linkedin.com/in/ismael-diaz-3b440b27a)
